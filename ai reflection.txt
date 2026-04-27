@@ -1,0 +1,17 @@
+Assignment 2: Home Gardener
+
+Two things the AI did well:
+1. The AI correctly identified that the problem involves a system of linear equations and 
+attempted to solve it using a determinant-based approach (Cramer's Rule), which is a valid mathematical strategy for this type of problem.
+
+2. It uses a lot of comments which makes it easier to read the code
+
+Two potential problems with the AI solution:
+1. The AI solution lacks robust error handling for cases where the determinant is zero 
+(i.e., when the system of equations has no unique solution or the ingredients are linearly dependent), which would cause a division-by-zero crash.
+2. The AI used 'using namespace std;', which is generally discouraged in professional C++ development and the course style guide as it can lead to naming conflicts, and it failed to include descriptive comments or follow the specific modular structure recommended in the lectures.
+
+Trust Statement:
+I would not fully trust this AI solution without further verification. While the mathematical logic seems plausible for a specific case, the lack of input validation, the use of poor coding practices 
+(like 'using namespace std;'), and the potential for runtime crashes make it unreliable for a general-purpose gardening tool. 
+It serves as a good starting point but requires significant refinement to meet the course's quality and safety standards.
